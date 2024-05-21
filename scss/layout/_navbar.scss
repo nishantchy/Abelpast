@@ -1,0 +1,39 @@
+.logo-image {
+  img {
+    width: 100%;
+    height: 50px;
+  }
+}
+
+.language-selector {
+  width: 24px;
+  height: auto;
+}
+
+.navbar-nav .nav-link {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.header {
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  padding: 20px 0px 20px 0px;
+  background: #fff;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.nav-item .nav-link {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+.nav-item .nav-link:hover {
+  color: #1c836c;
+  transition: all 0.3s ease-in;
+}
+
+.line {
+  width: 1px;
+  height: 50px;
+  background-color: #b1b1b1;
+}
