@@ -36,3 +36,17 @@ document.addEventListener("DOMContentLoaded", function () {
     }, 20);
   }
 });
+
+// swiper
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 4,
+  spaceBetween: 30,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});

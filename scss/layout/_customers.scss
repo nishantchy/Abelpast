@@ -1,0 +1,32 @@
+.swiper {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  max-width: 200px;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.customers {
+  position: relative;
+}
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  top: unset;
+}
+.swiper-pagination {
+  position: absolute;
+  bottom: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 20px;
+}

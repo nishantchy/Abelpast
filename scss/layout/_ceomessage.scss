@@ -1,0 +1,52 @@
+.message {
+  color: #717a78;
+  &-container {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    margin-top: 60px;
+  }
+  &-image {
+    img {
+      max-width: 500px;
+      width: 100%;
+      height: auto;
+      border-radius: 1%;
+    }
+  }
+  &-details {
+    h3 {
+      color: #0c2957;
+      font-weight: 600;
+      line-height: 32px;
+      font-size: 36px;
+    }
+
+    i {
+      color: #1c836c;
+      font-size: 40px;
+      font-weight: 700;
+    }
+  }
+  &-line {
+    height: 3px;
+    width: 10%;
+    background: #1c836c;
+    display: block;
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+  &-ceo {
+    color: #000;
+    font-weight: 600;
+    text-align: start;
+  }
+  &-text {
+    text-align: center;
+    line-height: 30px;
+  }
+}
+.fa-quote-right {
+  float: right;
+  right: 20%;
+}
