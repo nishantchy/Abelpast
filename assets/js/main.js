@@ -39,7 +39,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // swiper
 var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 5,
   // autoplay: {
   //   delay: 2500,
   //   disableOnInteraction: false,
@@ -48,4 +47,32 @@ var swiper = new Swiper(".mySwiper", {
     el: ".swiper-pagination",
     clickable: true,
   },
+  slidesPerView: 3,
+  breakpoints: {
+    768: {
+      slidesPerView: 5,
+
+    }
+  }
 });
+
+
+function scrollTop() {
+  const scrollBtn = document.querySelector(".scroll-top")
+
+  window.addEventListener("scroll", () => {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      scrollBtn.style.display = "block";
+    } else {
+      scrollBtn.style.display = "none";
+    }
+  });
+
+  scrollBtn.addEventListener("click", () => {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  })
+
+}
+
+scrollTop();
