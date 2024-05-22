@@ -1,0 +1,16 @@
+.brands {
+  color: #717a78;
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+
+  &-icons {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-wrap: wrap;
+    img {
+      width: 120px;
+    }
+  }
+}
