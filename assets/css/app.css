@@ -34,10 +34,6 @@ img {
   }
 }
 
-main {
-  color: white;
-}
-
 @media (max-width: 991px) {
   p {
     font-size: 16px;
@@ -503,7 +499,7 @@ main {
   .right-container i {
     width: 80px;
     padding: 5px 25px;
-    font-size: 35px;
+    font-size: 30px;
   }
 }
 @media (max-width: 767px) {
@@ -545,11 +541,13 @@ main {
 @media (max-width: 991px) {
   .choose-containers {
     margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 }
 @media (max-width: 767px) {
   .choose-containers {
-    flex-direction: column;
     margin-top: 10px;
   }
 }
@@ -567,6 +565,11 @@ main {
 .choose-title {
   font-size: 24px;
 }
+@media (max-width: 1199px) {
+  .choose-title {
+    font-size: 22px;
+  }
+}
 @media (max-width: 991px) {
   .choose-title {
     font-size: 20px;
@@ -583,6 +586,12 @@ main {
   color: #717a78;
   font-weight: 350;
   margin-top: 20px;
+}
+@media (max-width: 1199px) {
+  .choose-detail {
+    margin-top: 15px;
+    font-size: 18px;
+  }
 }
 @media (max-width: 991px) {
   .choose-detail {
@@ -615,7 +624,17 @@ main {
   overflow: hidden;
   border-radius: 50%;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-  max-width: 400px;
+  max-width: 300px;
+}
+@media (max-width: 1199px) {
+  .choose-image {
+    max-width: 200px;
+  }
+}
+@media (max-width: 991px) {
+  .choose-image {
+    max-width: 300px;
+  }
 }
 .choose-image img {
   width: 100%;
@@ -643,13 +662,28 @@ main {
   text-align: right;
 }
 
-.fa-user {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
 .stats {
   color: #0c2957;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  background-color: #f1f1f1;
+  padding: 20px;
+  gap: 20px;
+}
+@media (max-width: 1199px) {
+  .stats {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 991px) {
+  .stats {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .stats h2 {
   text-align: center;
@@ -664,79 +698,131 @@ main {
     font-size: 20px;
   }
 }
-.stats-section {
-  display: flex;
-}
-.stats i {
-  color: #0c2957;
-  font-size: 52px;
-  font-weight: 700;
-  border-radius: 50%;
-  padding: 20px;
-  background: #f2f2f2;
-}
-@media (max-width: 991px) {
-  .stats i {
-    font-size: 45px;
-  }
-}
-@media (max-width: 767px) {
-  .stats i {
-    font-size: 39px;
-  }
-}
 .stats-container {
   display: flex;
   justify-content: space-between;
   align-items: start;
   flex-wrap: wrap;
-  margin-top: 40px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  margin-top: 20px;
 }
-
-.detail {
+@media (max-width: 1199px) {
+  .stats-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 991px) {
+  .stats-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.stats .detail {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 40px;
-  gap: 20px;
+  padding: 20px;
+  gap: 10px;
   border-left: 1px solid #ebebeb;
+  background: #fff;
 }
-
-.detail:first-child {
+@media (max-width: 991px) {
+  .stats .detail {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.stats .detail:first-child {
   border-left: 0;
 }
-
-.number {
-  font-size: 60px;
-  font-weight: 600;
+.stats .detail i {
+  color: #0c2957;
+  font-size: 40px;
+  font-weight: 700;
+  border-radius: 50%;
+  padding: 10px;
+  background: #f2f2f2;
 }
 @media (max-width: 991px) {
-  .number {
-    font-size: 50px;
+  .stats .detail i {
+    font-size: 35px;
   }
 }
 @media (max-width: 767px) {
-  .number {
-    font-size: 40px;
+  .stats .detail i {
+    font-size: 30px;
   }
 }
-
-.label {
+.stats .detail .number {
+  font-size: 40px;
+  font-weight: 600;
+}
+@media (max-width: 991px) {
+  .stats .detail .number {
+    font-size: 35px;
+  }
+}
+@media (max-width: 767px) {
+  .stats .detail .number {
+    font-size: 30px;
+  }
+}
+.stats .detail .label {
   color: #242c36;
-  font-size: 22px;
-  line-height: 30px;
+  font-size: 16px;
+  line-height: 24px;
   font-weight: 600;
 }
 @media (max-width: 991px) {
-  .label {
-    font-size: 20px;
+  .stats .detail .label {
+    font-size: 14px;
   }
 }
 @media (max-width: 767px) {
-  .label {
-    font-size: 18px;
+  .stats .detail .label {
+    font-size: 12px;
   }
+}
+
+.extra-info {
+  padding: 20px;
+}
+@media (max-width: 1199px) {
+  .extra-info {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 991px) {
+  .extra-info {
+    justify-content: center;
+    align-items: center;
+  }
+}
+.extra-info p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+}
+@media (max-width: 991px) {
+  .extra-info p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 767px) {
+  .extra-info p {
+    font-size: 14px;
+  }
+}
+
+.detail-container {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .brands {
@@ -1176,4 +1262,73 @@ main {
   .scroll-top:hover svg {
     fill: #fff !important;
   }
+}
+
+.section {
+  padding: 50px 0;
+}
+.section .products {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 60px;
+}
+@media (max-width: 991px) {
+  .section .products {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 991px) {
+  .section .products {
+    margin-top: 10px;
+  }
+}
+.section .products .product-card {
+  position: relative;
+  width: 300px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: rgba(28, 131, 108, 0.35) 0px 25px 50px -12px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+.section .products .product-card:hover {
+  transform: translateY(-5px);
+}
+.section .products .product-card .product-image {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.section .products .product-card .product-details {
+  padding: 20px;
+}
+.section .products .product-card .product-details .product-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.section .products .product-card .product-details .product-description {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 15px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.section .products .product-card .product-details .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.section .products .product-card .product-details .btn:hover {
+  background-color: #0056b3;
 }/*# sourceMappingURL=app.css.map */
