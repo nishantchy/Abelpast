@@ -48,8 +48,14 @@ var swiper = new Swiper(".mySwiper", {
     clickable: true,
   },
   slidesPerView: 3,
+  loop: true,
   breakpoints: {
     768: {
+      slidesPerView: 4,
+
+    },
+
+    1200: {
       slidesPerView: 5,
 
     }
