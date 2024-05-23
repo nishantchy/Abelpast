@@ -28,6 +28,10 @@
     flex-wrap: wrap;
     img {
       width: 120px;
+      transition: all 0.2s ease-in-out;
+    }
+    img:hover {
+      transform: scale(1.1);
     }
   }
 }

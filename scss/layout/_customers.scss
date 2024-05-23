@@ -28,6 +28,10 @@
     border-radius: 0;
     box-shadow: none;
     width: fit-content;
+    transition: all 0.2s ease-in-out;
+  }
+  .swiper-slide img:hover {
+    transform: scale(1.1);
   }
 
   .swiper-pagination-bullets.swiper-pagination-horizonta.swiper-horizontal

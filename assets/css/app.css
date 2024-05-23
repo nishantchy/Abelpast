@@ -317,18 +317,111 @@ main {
   justify-content: center;
   align-items: start;
   gap: 20px;
+  position: relative;
 }
-.whoweare-image img {
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+.whoweare-image .image-one {
+  margin-top: 100px;
+  position: relative;
   width: 100%;
   height: 400px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.whoweare-image .image-one img {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  width: 100%;
+  height: 100%;
   border-radius: 10px;
   -o-object-fit: cover;
      object-fit: cover;
 }
+.whoweare-image .image-one::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  transition: all 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 1.5rem;
+  opacity: 0;
+}
+.whoweare-image .image-one:hover::before {
+  left: 0;
+  opacity: 1;
+}
+.whoweare-image .image-one .description {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.whoweare-image .image-one:hover .description {
+  opacity: 1;
+}
+.whoweare-image .image-two {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.whoweare-image .image-two img {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.whoweare-image .image-two::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  transition: all 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 1.5rem;
+  opacity: 0;
+}
+.whoweare-image .image-two:hover::before {
+  left: 0;
+  opacity: 1;
+}
+.whoweare-image .image-two .description {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.whoweare-image .image-two:hover .description {
+  opacity: 1;
+}
 
-.image-one img {
-  margin-top: 100px;
+.description p {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 6;
 }
 
 .title {
@@ -517,6 +610,9 @@ main {
   float: right;
 }
 .choose-image {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
   border-radius: 50%;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   max-width: 400px;
@@ -526,6 +622,21 @@ main {
   height: auto;
   -o-object-fit: contain;
      object-fit: contain;
+  border-radius: 50%;
+}
+.choose-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -150%;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(120deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.2) 100%);
+  transition: all 0.3s ease;
+}
+.choose-image:hover::before {
+  left: 150%;
+  transition: left 1.5s;
 }
 
 .right-container {
@@ -667,6 +778,10 @@ main {
 }
 .brands-icons img {
   width: 120px;
+  transition: all 0.2s ease-in-out;
+}
+.brands-icons img:hover {
+  transform: scale(1.1);
 }
 
 .message {
@@ -696,6 +811,10 @@ main {
   width: 100%;
   height: auto;
   border-radius: 1%;
+  transition: all 0.2s ease-in-out;
+}
+.message-image img:hover {
+  transform: scale(1.1);
 }
 .message-details h3 {
   color: #0c2957;
@@ -773,6 +892,10 @@ main {
   box-shadow: none;
   width: -moz-fit-content;
   width: fit-content;
+  transition: all 0.2s ease-in-out;
+}
+.customers .swiper-slide img:hover {
+  transform: scale(1.1);
 }
 .customers .swiper-pagination-bullets.swiper-pagination-horizonta.swiper-horizontal > .swiper-pagination-bullets,
 .customers .swiper-pagination-bullets.swiper-pagination-horizontal,
