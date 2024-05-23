@@ -39,16 +39,47 @@
       justify-content: center;
       margin-top: 20px;
     }
+
+    .decoration-dot {
+      position: fixed;
+      bottom: 0px;
+      width: 10px;
+      height: 10px;
+      background-color: #fff;
+      border-radius: 50%;
+      margin: 0 5px;
+
+      @media (max-width: 767px) {
+        // margin: 0 10px;
+        width: 5px;
+        height: 5px;
+      }
+    }
+
+    .dot-1 {
+      left: 40%;
+    }
+
+    .dot-2 {
+      left: 45%;
+    }
+
+    .dot-3 {
+      left: 50%;
+    }
+
+    .dot-4 {
+      left: 55%;
+    }
   }
 }
-
-.decoration-dot {
-  width: 10px;
-  height: 10px;
-  background-color: #fff;
-  border-radius: 50%;
-  margin: 0 5px;
-}
+// .decoration-dot {
+//   width: 10px;
+//   height: 10px;
+//   background-color: #fff;
+//   border-radius: 50%;
+//   margin: 0 5px;
+// }
 .company-journey {
   padding: 80px 0;
 

@@ -1362,13 +1362,32 @@ img {
   justify-content: center;
   margin-top: 20px;
 }
-
-.decoration-dot {
+.hero-header .decoration-dot {
+  position: fixed;
+  bottom: 0px;
   width: 10px;
   height: 10px;
   background-color: #fff;
   border-radius: 50%;
   margin: 0 5px;
+}
+@media (max-width: 767px) {
+  .hero-header .decoration-dot {
+    width: 5px;
+    height: 5px;
+  }
+}
+.hero-header .dot-1 {
+  left: 40%;
+}
+.hero-header .dot-2 {
+  left: 45%;
+}
+.hero-header .dot-3 {
+  left: 50%;
+}
+.hero-header .dot-4 {
+  left: 55%;
 }
 
 .company-journey {
