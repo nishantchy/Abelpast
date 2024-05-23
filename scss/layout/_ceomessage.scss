@@ -4,7 +4,20 @@
     display: flex;
     justify-content: start;
     align-items: start;
+    flex-wrap: wrap;
     margin-top: 60px;
+
+    @media (max-width: 1199px) {
+      // gap: 20px;
+    }
+    @media (max-width: 991px) {
+      gap: 20px;
+      margin-top: 30px;
+    }
+    @media (max-width: 991px) {
+      gap: 20px;
+      margin-top: 10px;
+    }
   }
   &-image {
     img {
@@ -20,6 +33,12 @@
       font-weight: 600;
       line-height: 32px;
       font-size: 36px;
+      @media (max-width: 991px) {
+        font-size: 30px;
+      }
+      @media (max-width: 767px) {
+        font-size: 26px;
+      }
     }
 
     i {

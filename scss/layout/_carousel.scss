@@ -20,21 +20,42 @@
   font-weight: 900;
   color: #201630;
   text-transform: uppercase;
+
+  @media (max-width: 991px) {
+    font-size: 75px;
+  }
+  @media (max-width: 767px) {
+    font-size: 45px;
+  }
 }
 
 .carousel-caption h3 {
   color: #201630;
   margin-bottom: 1.5rem;
   font-weight: 500;
+
+  @media (max-width: 991px) {
+    font-size: 24px;
+  }
+  @media (max-width: 767px) {
+    font-size: 18px;
+  }
 }
 
-.carousel-caption button {
-  font-size: 1.1rem;
-  padding: 0.6rem 1.2rem;
-}
+// .carousel-caption button {
+//   font-size: 1.1rem;
+//   padding: 0.6rem 1.2rem;
+// }
 
 .main-btn {
   margin-top: 40px;
+
+  @media (max-width: 991px) {
+    margin-top: 30px;
+  }
+  @media (max-width: 767px) {
+    margin-top: 20px;
+  }
 }
 
 .main-btn a {
@@ -51,6 +72,15 @@
   overflow: hidden;
   transition: color 0.4s ease;
   z-index: 1;
+
+  @media (max-width: 991px) {
+    font-size: 16px;
+    padding: 10px 25px;
+  }
+  @media (max-width: 767px) {
+    font-size: 14px;
+    padding: 7px 20px;
+  }
 }
 
 .main-btn a::before {

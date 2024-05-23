@@ -4,6 +4,14 @@
     display: flex;
     justify-content: center;
     align-items: start;
+    flex-wrap: wrap;
+
+    @media (max-width: 991px) {
+      margin-top: 30px;
+    }
+    @media (max-width: 767px) {
+      margin-top: 10px;
+    }
   }
 
   &-message {
@@ -13,6 +21,12 @@
       color: #0c2957;
       font-weight: 600;
       line-height: 32px;
+      @media (max-width: 991px) {
+        font-size: 24px;
+      }
+      @media (max-width: 767px) {
+        font-size: 18px;
+      }
     }
 
     p {

@@ -3,6 +3,13 @@
 
   h2 {
     text-align: center;
+
+    @media (max-width: 991px) {
+      font-size: 24px;
+    }
+    @media (max-width: 767px) {
+      font-size: 20px;
+    }
   }
   &-section {
     display: flex;
@@ -15,6 +22,13 @@
     border-radius: 50%;
     padding: 20px;
     background: #f2f2f2;
+
+    @media (max-width: 991px) {
+      font-size: 45px;
+    }
+    @media (max-width: 767px) {
+      font-size: 39px;
+    }
   }
   &-container {
     display: flex;
@@ -41,10 +55,24 @@
 .number {
   font-size: 60px;
   font-weight: 600;
+
+  @media (max-width: 991px) {
+    font-size: 50px;
+  }
+  @media (max-width: 767px) {
+    font-size: 40px;
+  }
 }
 .label {
   color: #242c36;
   font-size: 22px;
   line-height: 30px;
   font-weight: 600;
+
+  @media (max-width: 991px) {
+    font-size: 20px;
+  }
+  @media (max-width: 767px) {
+    font-size: 18px;
+  }
 }

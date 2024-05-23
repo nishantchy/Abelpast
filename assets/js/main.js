@@ -39,10 +39,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // swiper
 var swiper = new Swiper(".mySwiper", {
-  // autoplay: {
-  //   delay: 2500,
-  //   disableOnInteraction: false,
-  // },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
@@ -52,22 +52,22 @@ var swiper = new Swiper(".mySwiper", {
   breakpoints: {
     768: {
       slidesPerView: 4,
-
     },
 
     1200: {
       slidesPerView: 5,
-
-    }
-  }
+    },
+  },
 });
 
-
 function scrollTop() {
-  const scrollBtn = document.querySelector(".scroll-top")
+  const scrollBtn = document.querySelector(".scroll-top");
 
   window.addEventListener("scroll", () => {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    if (
+      document.body.scrollTop > 20 ||
+      document.documentElement.scrollTop > 20
+    ) {
       scrollBtn.style.display = "block";
     } else {
       scrollBtn.style.display = "none";
@@ -77,8 +77,21 @@ function scrollTop() {
   scrollBtn.addEventListener("click", () => {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-  })
-
+  });
 }
 
 scrollTop();
+
+//header lower
+function handleScroll() {
+  const headerLower = document.querySelector(".header-lower");
+  if (window.scrollY === 0) {
+    headerLower.style.display = "flex";
+  } else {
+    headerLower.style.display = "none";
+  }
+}
+
+window.addEventListener("scroll", handleScroll);
+
+handleScroll();

@@ -37,3 +37,12 @@ img {
 main {
   color: white;
 }
+
+p {
+  @media (max-width: 991px) {
+    font-size: 16px;
+  }
+  @media (max-width: 767px) {
+    font-size: 14px;
+  }
+}
