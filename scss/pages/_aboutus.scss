@@ -81,11 +81,9 @@
 //   margin: 0 5px;
 // }
 .company-journey {
-  padding: 80px 0;
-
   .journey-timeline {
     position: relative;
-    max-width: 1200px;
+    // max-width: 1200px;
     margin: 0 auto;
 
     .journey-line {
@@ -222,4 +220,61 @@
       }
     }
   }
+}
+
+.intro-vision {
+  &-container {
+    margin-top: 60px;
+
+    @media (max-width: 991px) {
+      margin-top: 30px;
+    }
+    @media (max-width: 991px) {
+      margin-top: 10px;
+    }
+    i {
+      font-size: 42px;
+      font-weight: 700;
+      color: #fff;
+      background: #1c836c;
+      padding: 20px;
+      border-radius: 50%;
+
+      @media (max-width: 767px) {
+        font-size: 32px;
+        padding: 15px;
+      }
+    }
+
+    h3 {
+      color: #0c2957;
+      font-weight: 700;
+      line-height: 34px;
+    }
+    p {
+      color: #717a78;
+      line-height: 28px;
+    }
+  }
+}
+.introduction {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  gap: 40px;
+
+  @media (max-width: 991px) {
+    gap: 30px;
+  }
+  @media (max-width: 767px) {
+    gap: 20px;
+  }
+}
+.vision {
+  display: flex;
+  justify-content: end;
+  align-items: start;
+  // float: right;
+  gap: 40px;
+  margin-top: 40px;
 }

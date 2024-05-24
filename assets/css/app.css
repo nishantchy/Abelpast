@@ -888,12 +888,16 @@ img {
   .message-container {
     gap: 20px;
     margin-top: 30px;
+    justify-content: center;
+    align-items: start;
   }
 }
 @media (max-width: 991px) {
   .message-container {
     gap: 20px;
     margin-top: 10px;
+    justify-content: center;
+    align-items: start;
   }
 }
 .message-image img {
@@ -912,9 +916,15 @@ img {
   line-height: 32px;
   font-size: 36px;
 }
+@media (max-width: 1199px) {
+  .message-details h3 {
+    font-size: 30px;
+  }
+}
 @media (max-width: 991px) {
   .message-details h3 {
     font-size: 30px;
+    text-align: center;
   }
 }
 @media (max-width: 767px) {
@@ -935,14 +945,44 @@ img {
   margin-bottom: 20px;
   margin-top: 10px;
 }
+@media (max-width: 991px) {
+  .message-line {
+    display: none;
+  }
+}
 .message-ceo {
   color: #000;
   font-weight: 600;
   text-align: start;
 }
+@media (max-width: 991px) {
+  .message-ceo {
+    text-align: center;
+  }
+}
+@media (max-width: 767px) {
+  .message-ceo {
+    text-align: center;
+  }
+}
 .message-text {
   text-align: center;
   line-height: 30px;
+}
+@media (max-width: 1199px) {
+  .message-text {
+    font-size: 16px;
+  }
+}
+@media (max-width: 991px) {
+  .message-text {
+    font-size: 15px;
+  }
+}
+@media (max-width: 767px) {
+  .message-text {
+    font-size: 14px;
+  }
 }
 
 .fa-quote-right {
@@ -1246,9 +1286,6 @@ img {
   }
 }
 
-.section {
-  padding: 50px 0;
-}
 .section .products {
   display: flex;
   justify-content: center;
@@ -1390,12 +1427,8 @@ img {
   left: 55%;
 }
 
-.company-journey {
-  padding: 80px 0;
-}
 .company-journey .journey-timeline {
   position: relative;
-  max-width: 1200px;
   margin: 0 auto;
 }
 .company-journey .journey-timeline .journey-line {
@@ -1520,4 +1553,65 @@ img {
   .company-journey .journey-timeline .journey-item .journey-content {
     text-align: left;
   }
+}
+.intro-vision-container {
+  margin-top: 60px;
+}
+@media (max-width: 991px) {
+  .intro-vision-container {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 991px) {
+  .intro-vision-container {
+    margin-top: 10px;
+  }
+}
+.intro-vision-container i {
+  font-size: 42px;
+  font-weight: 700;
+  color: #fff;
+  background: #1c836c;
+  padding: 20px;
+  border-radius: 50%;
+}
+@media (max-width: 767px) {
+  .intro-vision-container i {
+    font-size: 32px;
+    padding: 15px;
+  }
+}
+.intro-vision-container h3 {
+  color: #0c2957;
+  font-weight: 700;
+  line-height: 34px;
+}
+.intro-vision-container p {
+  color: #717a78;
+  line-height: 28px;
+}
+
+.introduction {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  gap: 40px;
+}
+@media (max-width: 991px) {
+  .introduction {
+    gap: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .introduction {
+    gap: 20px;
+  }
+}
+
+.vision {
+  display: flex;
+  justify-content: end;
+  align-items: start;
+  gap: 40px;
+  margin-top: 40px;
 }/*# sourceMappingURL=app.css.map */
