@@ -95,3 +95,14 @@ function handleScroll() {
 window.addEventListener("scroll", handleScroll);
 
 handleScroll();
+
+//google translator
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement(
+    {
+      pageLanguage: "en",
+      includedLanguages: "ne,en,ar",
+    },
+    "google_element"
+  );
+}

@@ -41,3 +41,31 @@
   height: 50px;
   background-color: #b1b1b1;
 }
+#google_element {
+  a {
+    display: none;
+  }
+  img {
+    display: none;
+  }
+  span {
+    display: none;
+  }
+  select {
+    font-size: 14px;
+    font-weight: 600;
+    // padding: 5px;
+  }
+
+  option {
+    font-size: 14px;
+    font-weight: 600;
+  }
+}
+#google_element > div {
+  font-size: 0;
+}
+
+#google_element > div > span {
+  font-size: initial;
+}
