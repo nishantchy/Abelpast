@@ -1596,6 +1596,7 @@ img {
   justify-content: start;
   align-items: start;
   gap: 40px;
+  padding: 20px;
 }
 @media (max-width: 991px) {
   .introduction {
@@ -1614,4 +1615,28 @@ img {
   align-items: start;
   gap: 40px;
   margin-top: 40px;
+}
+
+.mission {
+  display: flex;
+  justify-content: end;
+  align-items: start;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.mission-vision {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 20px;
+  background: #f1f1f1;
+  padding: 20px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+@media (max-width: 991px) {
+  .mission-vision {
+    flex-wrap: wrap;
+    width: 100%;
+  }
 }/*# sourceMappingURL=app.css.map */
