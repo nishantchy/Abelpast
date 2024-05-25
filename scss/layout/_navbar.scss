@@ -70,3 +70,6 @@
 #google_element > div > span {
   font-size: initial;
 }
+.goog-te-combo option[value=""] {
+  display: none;
+}

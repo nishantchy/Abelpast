@@ -16,14 +16,23 @@
   justify-content: space-evenly;
   flex-wrap: wrap;
   align-items: start;
-  //   gap: 40px;
 
   &-image {
-    max-width: 300px;
+    max-width: 280px;
 
     img {
       width: 100%;
       height: auto;
+    }
+  }
+  &-form {
+    h3 {
+      color: #0c2957;
+      font-weight: 700;
+      text-align: center;
+      max-width: 500px;
+      width: 100%;
+      margin: auto;
     }
   }
 }

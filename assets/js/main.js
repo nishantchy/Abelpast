@@ -97,11 +97,12 @@ window.addEventListener("scroll", handleScroll);
 handleScroll();
 
 //google translator
+
 function googleTranslateElementInit() {
   new google.translate.TranslateElement(
     {
-      pageLanguage: "en",
-      includedLanguages: "en,ar,zh-CN",
+      // pageLanguage: "en",
+      includedLanguages: "en,ar",
     },
     "google_element"
   );
