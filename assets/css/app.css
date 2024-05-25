@@ -103,6 +103,7 @@ img {
 #google_element select {
   font-size: 14px;
   font-weight: 600;
+  border: 0;
 }
 #google_element option {
   font-size: 14px;
