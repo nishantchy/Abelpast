@@ -101,7 +101,7 @@ function googleTranslateElementInit() {
   new google.translate.TranslateElement(
     {
       pageLanguage: "en",
-      includedLanguages: "en,ar",
+      includedLanguages: "en,ar,zh-CN",
     },
     "google_element"
   );
