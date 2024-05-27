@@ -19,7 +19,6 @@
   margin-bottom: 20px;
   position: relative;
   transition: transform 0.3s ease-in-out;
-
   height: 300px;
 }
 
@@ -47,24 +46,9 @@
 
 .card img {
   width: 100%;
-  height: 150px;
+  height: 350px;
   object-fit: cover;
   display: block;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #1c836c;
-  opacity: 0.5;
-  transition: opacity 0.3s ease-in-out;
-}
-
-.card:hover .overlay {
-  opacity: 0.7;
 }
 
 .card-content {
@@ -74,23 +58,9 @@
 .card-title {
   font-size: 20px;
   margin-bottom: 10px;
-}
-
-.card-detail {
-  font-size: 14px;
-  color: #555;
+  text-align: center;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
-}
-
-.card-icons {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-
-  i {
-    color: #fff;
-  }
 }
